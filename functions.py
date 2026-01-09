@@ -35,7 +35,7 @@ def validate_age(age):
 # print(validate_age(-5))    # Raises ValueError
 # print(validate_age("abc")) # Raises ValueError
 
-import math.pi
+import math
 
 def calculate_rectangle_area(length, width):
     """Returns area of a rectangle (length * width)."""
