@@ -63,5 +63,5 @@ def get_area(shape, *args):
         return "Invalid shape! Please use 'rectangle' or 'circle'."
 
 # Example Usage:
-# rect_area = get_area("rectangle", 10, 5)
-# circ_area = get_area("circle", 7)
+# rect_area = get_area("rectangle", 15, 2) (15 * 2 = 30)
+# circ_area = get_area("circle", 5) (pi * 5^2 = pi * 25) 
