@@ -7,7 +7,7 @@ def count_words_in_file(file):
     Handles FileNotFoundError if the file does not exist.
     """
     try:
-        # Use 'with' to ensure the file is properly closed after reading
+        # Use 'with' to ensure the file is properly closed after reading. 'r' used for read mode.
         with open(file, 'r', encoding='utf-8') as file:
             content = file.read()
             # .split() splits by any whitespace (spaces, tabs, newlines)
@@ -36,3 +36,23 @@ else:
 #     print(f"Total words: {word_count}")
 # else:
 #     None
+
+# words = ["Nintendo 64", "Gamecube", "Wii", "Switch", "Switch 2"]
+
+def write_lines_to_file(string_list):
+    """
+    Takes a list of strings and writes each one 
+    to a new line in a file named 'output.txt'.
+    """
+    # Open 'output.txt' in write mode ('w'). 
+    # This will create the file or overwrite if it already exists.
+    with open("output.txt", "w", encoding="utf-8") as file:
+        for item in string_list:
+            # Write the string followed by a newline character (\n)
+            file.write(f"{item}\n")
+
+# write_lines_to_file(words)
+
+# Example usage:
+# words = ["Nintendo 64", "Gamecube", "Wii", "Switch", "Switch 2"]
+# write_lines_to_file(words)
